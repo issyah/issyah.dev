@@ -1,11 +1,15 @@
 <template>
     <div class="w-full md:w-5/6 mx-auto">
-        <div class="relative w-5/6 md:w-full mx-auto rounded-lg overflow-hidden" :style="{transform:getTransformsOffset}">
-            <img :src="imageUrl" alt="DP" class=" h-full w-full object-cover"/>
-            <img :src="imageUrlHover" alt="DP" class="top-0 absolute h-full w-full object-cover transition-opacity" :class="hoverImgOpacity"/>
+        <!-- <div class="relative w-5/6 md:w-full mx-auto rounded-lg overflow-hidden" :style="{transform:getTransformsOffset}"> -->
+        <div ref="card">
+            <div class="relative w-5/6 md:w-full mx-auto rounded-lg overflow-hidden" data-depth="0.1">
+                <img :src="imageUrl" alt="DP" class=" h-full w-full object-cover"/>
+                <img :src="imageUrlHover" alt="DP" class="top-0 absolute h-full w-full object-cover transition-opacity" :class="hoverImgOpacity"/>
+            </div>
         </div>
-        <div class="md:px-3 -mt-12 relative">
-            <div class="p-5 text-left bg-gray-100 rounded-lg shadow-lg" :style="{transform: getTransforms}">
+        <div class="md:px-3 -mt-12 relative" ref="card2">
+            <!-- <div class="p-5 text-left bg-gray-100 rounded-lg shadow-lg" :style="{transform: getTransforms}"> -->
+            <div class="p-5 text-left bg-gray-100 rounded-lg shadow-lg" data-depth="0.2">
                 <h2 class="text-gray-900 font-normal text-xl">
                     <div class="mt-2">
                         I am mad in love with <span class="text-red-500 inline-block border-red-500 border-b-2 p-1" @mouseover="toggleDp" @mouseout="toggleDp">80s Synthwave music</span> and a huge <span class="text-red-500 border-red-500 border-b-2 inline-block p-1 ">Star Wars</span> nerd.
@@ -22,6 +26,7 @@
     </div>
 </template>
 <script>
+    import parallexjs from 'parallax-js';
     export default ({
         data:() => ({
             x: '',
@@ -52,6 +57,17 @@
         },
         mounted(){
             this.imgMouseOverUrl = this.imageUrl;
+            let parallex = this.$refs.card;
+            let parallex2 = this.$refs.card2;
+            let p = new parallexjs(parallex,{
+                relativeInput: true,
+            });
+            let p2 = new parallexjs(parallex2,{
+                relativeInput: true,
+            });
+        },
+        created(){
+
         },
         watch:{
             mouseX(value){

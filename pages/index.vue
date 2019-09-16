@@ -31,7 +31,7 @@
             <div class="md:flex justify-between">
                 <div class="w-full md:w-1/2">
                     <div :style="{transform: setParallexDepth(0.1, 'readme')}" class="md:bg-transparent mt-4" ref="readme">
-                        <div class="text-left" v-scroll-reveal.reset>
+                        <div class="text-left" v-scroll-reveal>
                             <h1 class="text-4xl mt-10 md:text-6xl font-bold inline-block leading-tight">
                                 <span class="text-red-500">
                                     <svg class="h-8 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" ><path fill="currentColor" d="M6 2h9a1 1 0 0 1 .7.3l4 4a1 1 0 0 1 .3.7v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2zm9 2.41V7h2.59L15 4.41zM18 9h-3a2 2 0 0 1-2-2V4H6v16h12V9zm-2 7a1 1 0 0 1-1 1H9a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1zm0-4a1 1 0 0 1-1 1H9a1 1 0 0 1 0-2h6a1 1 0 0 1 1 1zm-5-4a1 1 0 0 1-1 1H9a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1z"/></svg>
@@ -39,7 +39,7 @@
                                 Readme.md
                             </h1>
                         </div>
-                        <div class="md:text-xl leading-relaxed relative mt-16 tracking-widest" v-scroll-reveal.reset>
+                        <div class="md:text-xl leading-relaxed relative mt-16 tracking-widest" v-scroll-reveal>
                             <div>
                                 <p>I am a full-time front-end magician (a.k.a developer) working at SendForensics, based in Singapore. I am passionate about building user interfaces and front-end components that just work intuitively. With a little over 5 years of experience, I’ve grown to understand the fundamentals of designing and creating awesome user interfaces.  </p>
                                 <p class="mt-5">
@@ -63,16 +63,16 @@
                                 Current Skillset:
                             </h3>
                             <ul class="skills-list font-semibold">
-                                <li v-scroll-reveal.reset>
+                                <li v-scroll-reveal>
                                     <span>UI/UX Design</span>
                                 </li>
-                                <li v-scroll-reveal.reset>
+                                <li v-scroll-reveal>
                                     <span>Responsive Web Design</span>
                                 </li>
-                                <li v-scroll-reveal.reset>
+                                <li v-scroll-reveal>
                                     <span>Front-End Development</span>
                                 </li>
-                                <li v-scroll-reveal.reset>
+                                <li v-scroll-reveal>
                                     <span>Data Visualisation</span>
                                 </li>
                             </ul>
@@ -88,6 +88,13 @@
                                     '.sass',
                                     '.php'
                                 ]"></labels>
+
+                            <h3 class="text-2xl font-bold block relative mt-5">
+                                Need more geeky stuff?
+                            </h3>
+                            <nuxt-link to="/workstation" class="md:inline-block mt-5 px-5 py-1 text-xl border-white rounded-full border hover:bg-red-500 hover:border-red-500 items-center self-center">
+                                Tools I love
+                            </nuxt-link>
                         </div>
                     </div>
                 </div>
@@ -95,7 +102,7 @@
         </div>
 
         <div id="works"></div>
-        <div class="container md:min-h-screen p-4 mx-auto">
+        <div class="container md:min-h-screen p-4 mx-auto relative">
             <div class="md:text-right">
                 <h1 class="text-4xl my-10 md:text-6xl font-bold inline-block leading-tight">
                     <svg class="inline-block h-8 text-red-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" class="heroicon-ui" d="M20 6a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2h7.41l2 2H20zM4 6v12h16V8h-7.41l-2-2H4z"/></svg>
@@ -104,8 +111,8 @@
             </div>
             <div class="md:flex md:justify-between">
                 <div class="md:w-7/12 relative p-5">
-                    <img src="~/assets/works/obvy.jpg" class="w-full" alt="Obvy" v-scroll-reveal.reset>
-                    <h3 class="absolute left-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-100 md:opacity-50 " :style="{transform: setParallexDepth(0.2, 'obvy')}" ref="obvy">
+                    <img src="~/assets/works/obvy.jpg" class="w-full rounded-lg" alt="Obvy" v-scroll-reveal>
+                    <h3 class="absolute left-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-100 md:opacity-50 rounded-lg" :style="{transform: setParallexDepth(0.2, 'obvy')}" ref="obvy">
                         <a href="http://obvy.sg" target="_blank">OBVY.SG</a>
                     </h3>
                 </div>
@@ -120,8 +127,8 @@
 
                 </div>
                 <div class="md:w-7/12 relative p-5">
-                    <img src="~/assets/works/harummanis.jpg" class="w-full" alt="Obvy" v-scroll-reveal.reset>
-                    <h3 class="absolute left-0 md:left-auto md:right-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-50 md:opacity-75 " :style="{transform:setParallexDepth(0.2, 'harummanis')}" ref="harummanis">
+                    <img src="~/assets/works/harummanis.jpg" class="w-full rounded-lg" alt="Obvy" v-scroll-reveal>
+                    <h3 class="absolute left-0 md:left-auto md:right-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-50 md:opacity-75 rounded-lg" :style="{transform:setParallexDepth(0.2, 'harummanis')}" ref="harummanis">
                         <a href="http://harummanis.sg" target="_blank">HARUMMANIS.SG</a>
                     </h3>
                 </div>
@@ -130,7 +137,7 @@
 
         <div class="container md:min-h-screen p-4 mx-auto md:flex">
             <div class="md:self-center">
-                <h1 class="text-5xl my-10 md:text-6xl font-bold inline-block  leading-tight" v-scroll-reveal.reset>
+                <h1 class="text-5xl my-10 md:text-6xl font-bold inline-block  leading-tight" v-scroll-reveal>
                     <svg class="h-8 inline text-red-600" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" ><path fill="currentColor" d="M512 32H112c-8.8 0-16 7.2-16 16v256c0 44.2 35.8 80 80 80h224c44.2 0 80-35.8 80-80v-16h32c70.6 0 128-57.4 128-128S582.6 32 512 32zm-80 272c0 17.6-14.4 32-32 32H176c-17.6 0-32-14.4-32-32V80h288v224zm80-64h-32V80h32c44.1 0 80 35.9 80 80s-35.9 80-80 80zm55.8 240H40.2c-37.3 0-50.2-48-32-48h591.7c18.1 0 5.2 48-32.1 48z" class=""></path></svg>
                     Coffee Talk?
                 </h1>
