@@ -6,7 +6,6 @@
                 <nuxt/>
             </div>
         </div>
-
     </div>
 </template>
 <script>
@@ -16,27 +15,26 @@
             Navbar,
         },
         mounted(){
-            console.log(this);
         }
     }
 </script>
 <style>
-    h1{
+    .article h1{
         @apply text-6xl font-medium;
     }
-    h2{
+    .article h2{
         @apply text-4xl font-medium;
     }
-    h3{
+    .article h3{
         @apply text-2xl font-medium;
     }
-    p{
+    .article p{
         @apply text-lg mt-4 leading-relaxed tracking-wide;
     }
-    .created-date{
+    .article .created-date{
         @apply text-gray-500
     }
-    img{
+    .article img{
         @apply h-20 w-auto mx-auto;
     }
 </style>
