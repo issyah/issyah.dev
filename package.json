@@ -8,10 +8,12 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "nuxt generate && cp -a dist/. ../issyah.github.io/"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/markdownit": "^1.2.6",
     "nuxt": "^2.0.0",
     "parallax-js": "^3.1.0",
     "vue-scroll-reveal": "^1.0.11"

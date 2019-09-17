@@ -31,7 +31,7 @@ export default {
     {
       src: '~/plugins/vue-scroll-reveal',
       mode: 'client'
-    }
+    },
   ],
   /*
   ** Nuxt.js dev-modules
@@ -46,6 +46,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/markdownit'
   ],
   /*
   ** Axios module configuration

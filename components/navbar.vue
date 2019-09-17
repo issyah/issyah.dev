@@ -14,14 +14,17 @@
             <div class="self-center">
                 <ul class="nav-link">
                     <li>
-                        <nuxt-link to="/#readme" class="font-medium hover:underline mr-5">
+                        <nuxt-link to="/#readme" class="hover:text-gray-500 mr-5">
                             About
                         </nuxt-link>
                     </li>
                     <li>
-                        <nuxt-link to="/#works" class="font-medium hover:underline mr-5">
+                        <nuxt-link to="/#works" class="hover:text-gray-500 mr-5">
                             Works
                         </nuxt-link>
+                    </li>
+                    <li>
+                        <nuxt-link to="/articles/" class="hover:text-gray-500 mr-5">Articles</nuxt-link>
                     </li>
                 </ul>
             </div>

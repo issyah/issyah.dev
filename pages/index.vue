@@ -92,7 +92,7 @@
                             <h3 class="text-2xl font-bold block relative mt-5">
                                 Need more geeky stuff?
                             </h3>
-                            <nuxt-link to="/workstation" class="md:inline-block mt-5 px-5 py-1 text-xl border-white rounded-full border hover:bg-red-500 hover:border-red-500 items-center self-center">
+                            <nuxt-link to="/workstation" class="md:inline-block text-center block mt-5  px-5 py-1 text-xl border-white rounded-full border hover:bg-red-500 hover:border-red-500 items-center self-center">
                                 Tools I love
                             </nuxt-link>
                         </div>

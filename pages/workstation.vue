@@ -2,8 +2,9 @@
     <div>
         <div class="container p-4 mx-auto md:min-h-screen pb-8">
             <div class="mt-10 md:w-full lg:w-1/2">
+                <h1 class="text-5xl font-bold">Workstation</h1>
                 <p class="text-xl">Check out what I am stacking! The most important one that is.</p>
-                <h1 class="text-4xl md:text-6xl font-bold inline-block leading-tight mt-8">
+                <h1 class="text-4xl font-medium inline-block leading-tight mt-8">
                     <span class="text-red-500">
                         <svg width="32.57142857142856" height="24" viewBox="0 0 38 28" xmlns="http://www.w3.org/2000/svg" class="fill-current inline-block h-8"><path d="M34 26h4v1c-1.333.667-2.667 1-4 1H4c-1.333 0-2.667-.333-4-1v-1h4V7.5A1.5 1.5 0 0 1 5.5 6h27A1.5 1.5 0 0 1 34 7.5V26zM6 8v18h26V8H6z" fill-rule="evenodd"></path></svg>
                     </span>
@@ -29,7 +30,7 @@
                         },
                     ]"></hardware-list>
                 </p>
-                <h1  class="text-4xl md:text-6xl font-bold inline-block leading-tight mt-8">
+                <h1  class="text-4xl font-medium inline-block leading-tight mt-8">
                     <span class="text-red-500">
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-current inline-block h-8">
     						<g id="Page-1" stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
