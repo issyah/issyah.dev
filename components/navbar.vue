@@ -1,6 +1,6 @@
 <template>
-    <nav class="w-full z-10">
-        <div class="container mx-auto px-4 py-3 flex justify-between text-gray-400">
+    <nav class="w-full z-10 bg-body text-gray-100">
+        <div class="container mx-auto px-4 py-2 flex justify-between text-gray-400">
             <router-link :to="{ name: 'index', params: {} }">
                 <div class="flex flex-row border-gray-900 border rounded overflow-hidden">
                     <div class="py-1 px-2 text-xl border-r-0 font-bold text-red-500">

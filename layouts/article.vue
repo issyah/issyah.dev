@@ -1,11 +1,7 @@
 <template>
     <div class="bg-body text-gray-100 leading-normal">
         <navbar></navbar>
-        <div class="bg-white text-gray-800">
-            <div class="w-full md:w-10/12 lg:w-1/2 p-4 mx-auto min-h-screen pt-8">
-                <nuxt/>
-            </div>
-        </div>
+        <nuxt/>
     </div>
 </template>
 <script>
@@ -35,6 +31,6 @@
         @apply text-gray-500
     }
     .article img{
-        @apply h-20 w-auto mx-auto;
+        @apply h-auto w-full mx-auto;
     }
 </style>

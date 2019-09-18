@@ -159,6 +159,7 @@ import SocialIcons from '~/components/social_icons.vue';
 import Labels from '~/components/labels.vue';
 import DeathStar from '~/components/death_star.vue';
 export default {
+    transition: 'slide',
     layout: 'default',
     components: {
         Card,
