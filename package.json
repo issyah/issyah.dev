@@ -6,10 +6,11 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "rm -r dist && nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "nuxt generate && cp -a dist/. ../issyah.github.io/"
+    "deploy": "rm -r dist && nuxt generate && cp -a dist/. ../issyah.github.io/",
+    "deploy-spa" : "nuxt build && cp -a dist/. ../issyah.github.io/"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",

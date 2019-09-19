@@ -20,7 +20,11 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content:'Issyah Ismail. UI/UX Front End Developer based in Singapore' },
+      { hid: 'og:locale', property: 'og:locale', content: 'sg_SG'},
+      { hid: 'og:type', property: 'og:type', content: 'website'},
+      { hid: 'og:title', property: 'og:title', content: 'Issyah Ismail'},
+      { hid: 'og:description', property: 'og:description', content: 'Issyah Ismail. UI/UX Front End Developer based in Singapore'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

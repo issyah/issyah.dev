@@ -159,6 +159,15 @@ import SocialIcons from '~/components/social_icons.vue';
 import Labels from '~/components/labels.vue';
 import DeathStar from '~/components/death_star.vue';
 export default {
+    head(){
+        return{
+            title: 'Issyah Ismail',
+            meta:[
+                {hid: 'description', name: 'description', content: 'Issyah Ismail. UI/UX Front End Developer based in Singapore'},
+
+            ]
+        }
+    },
     transition: 'slide',
     layout: 'default',
     components: {
