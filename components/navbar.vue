@@ -20,7 +20,7 @@
                     </span>
                 </button>
             </div>
-            <div class="self-center lg:block nav-item w-full block lg:items-center lg:w-auto h-screen lg:h-auto flex" :style="slideNavToggle">
+            <div class="self-center lg:block nav-item w-full block lg:items-center lg:w-auto h-screen lg:h-auto flex" :class="{'active' : nav}">
                 <ul class="nav-link text-4xl lg:text-base pl-10 lg:pl-0">
                     <li class="mt-10 lg:mt-0 block lg:inline-block" @click="nav = false">
                         <nuxt-link to="/#readme" class="hover:text-gray-500 mr-5">
@@ -47,24 +47,8 @@
     export default {
         data:() => ({
             nav: false,
-            navHidden: true,
         }),
         computed:{
-            slideNavToggle(){
-                if(this.nav){
-                    return {
-                        opacity: 1,
-                        height:'100vh',
-                        transition: 'all 0.08s ease-in ',
-                    }
-                }else{
-                    return {
-                        opacity: 0,
-                        height: '0px',
-                        transition: 'all 0.08s ease-in',
-                    }
-                }
-            },
         },
         methods:{
             toggleNav(){

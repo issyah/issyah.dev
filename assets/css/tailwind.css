@@ -223,3 +223,16 @@
   50% { transform: scale(1.5) }
   100% { transform: scale(0) }
 }
+
+@media (max-width: 1024px){
+    .nav-item{
+        opacity: 0;
+        height: 0px;
+        transition: all 300ms ease-in;
+    }
+    .nav-item.active{
+        opacity: 1;
+        height:100vh;
+        transition: all 300ms ease-in;
+    }
+}

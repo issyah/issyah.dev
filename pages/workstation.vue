@@ -113,6 +113,11 @@
         transition: 'fade',
         components:{
             HardwareList
+        },
+        head(){
+            return {
+                title: 'Workstation',
+            }
         }
     }
 </script>
