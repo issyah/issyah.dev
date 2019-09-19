@@ -9,7 +9,7 @@
     "build": "rm -r dist && nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "rm -r dist && nuxt generate && cp -a dist/. ../issyah.github.io/",
+    "deploy": "rm -rf dist && nuxt generate && cp -a dist/. ../issyah.github.io/",
     "deploy-spa" : "nuxt build && cp -a dist/. ../issyah.github.io/"
   },
   "dependencies": {

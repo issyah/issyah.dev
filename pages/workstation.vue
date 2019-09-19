@@ -82,7 +82,7 @@
                             img: require('~/assets/images/vue.png'),
                             header: 'Javascript framework',
                             title: 'Vue.js / Nuxt.js',
-                            description: 'Vue is my go-to framework for building user-interface and front-end wizardry. I\'ve worked with other frameworks like jQuery, Angular 1.0 and React but I got stuck with Vue because it is just so easy to get started with. It does not have a huge learning curve like React and Angular 2.0 and I personally would recommend you to try it! Once you the gist of it, proceed to nuxt! This site is build using Nuxt.js'
+                            description: 'Vue is my go-to framework for building user-interface and front-end wizardry. I\'ve worked with other frameworks like jQuery, Angular 1.0 and React but I got stuck with Vue because it is just so easy to get started with. It does not have a huge learning curve like React and Angular 2.0 and I personally would recommend you to try it! Once you the gist of it, proceed to nuxt! This site is built using Nuxt.js'
                         },
                         {
                             img: require('~/assets/icons/bootstrap.svg'),
