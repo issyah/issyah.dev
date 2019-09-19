@@ -116,7 +116,7 @@
         },
         head(){
             return {
-                title: 'Workstation',
+                title: 'Issyah Ismail - Workstation',
             }
         }
     }

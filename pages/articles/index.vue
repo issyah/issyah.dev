@@ -43,6 +43,11 @@
         },
         methods:{
 
+        },
+        head(){
+            return {
+                title: 'Issyah Ismail - Articles',
+            }
         }
     }
 </script>
