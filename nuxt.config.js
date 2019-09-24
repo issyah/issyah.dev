@@ -2,15 +2,22 @@
 const path = require('path');
 const glob = require('glob');
 
-let dynamicRoutes = getDynamicPaths({
-  '/articles' : '/articles/*.md'
-})
+let files = glob.sync('**/*.md', {cwd: 'contents'});
+
+function getSlugs(article, _){
+  let slug = article.substr(0, article.lastIndexOf('.'));
+  return `/articles/${slug}`;
+}
 export default {
-
-  generate:{
-    routes: dynamicRoutes
+  server:{
+    port: 3000,
+    host: '0.0.0.0',
   },
-
+  generate :{
+    routes: function() {
+      return files.map(getSlugs);
+    }
+  },
   mode: 'universal',
   /*
   ** Headers of the page
@@ -61,7 +68,18 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    // google analytics
+    '@nuxtjs/google-analytics',
+    //site map
+    '@nuxtjs/sitemap'
   ],
+  sitemap:{
+    hostname: 'issyah.com'
+  },
+  // google analytics configuration
+  googleAnalytics:{
+    id: 'UA-148508896-1',
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -86,16 +104,4 @@ export default {
       );
     }
   }
-}
-
-// create dynamic url path
-function getDynamicPaths(urlFilepathTable) {
-  return [].concat(
-    ...Object.keys(urlFilepathTable).map(url => {
-      var filepathGlob = urlFilepathTable[url];
-      return glob
-        .sync(filepathGlob, { cwd: 'content' })
-        .map(filepath => `${url}/${path.basename(filepath, '.json')}`);
-    })
-  );
 }

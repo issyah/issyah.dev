@@ -31,7 +31,8 @@
         data:() => ({
             x: '',
             y: '',
-            hoverImgOpacity: 'opacity-0'
+            hoverImgOpacity: 'opacity-0',
+            p2: '',
         }),
         computed:{
             getTransforms(){
@@ -53,6 +54,13 @@
 
                 let toggleBackground = (this.hoverImgOpacity == 'opacity-0') ? true : false
                 this.$emit('toggle-bg', toggleBackground);
+            },
+            disableP2(){
+                this.p2.disable();
+                console.log('mouse over');
+            },
+            enabledP2(){
+                this.p2.enable();
             }
         },
         mounted(){
@@ -62,8 +70,9 @@
             let p = new parallexjs(parallex,{
                 relativeInput: true,
             });
-            let p2 = new parallexjs(parallex2,{
+            this.p2 = new parallexjs(parallex2,{
                 relativeInput: true,
+                pointerEvents: true,
             });
         },
         created(){

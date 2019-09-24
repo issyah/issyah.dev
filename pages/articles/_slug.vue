@@ -1,19 +1,22 @@
 <template>
     <div class="relative">
-        <div class="bg-green-500">
+        <div class="bg-green-500 lg:pt-16">
             <div class="w-full md:w-1/2 p-4 mx-auto" ref="jumbotron">
-                <div :style="{transform:parallexArticle(0.4)}">
-                    <nuxt-link to="/articles" class="rounded-full px-5 p-2  text-white block md:inline-block text-center font-bold hover:underline">Back to Articles</nuxt-link>
-                    <img :src="this.attributes.img" alt="Article Image" class="mt-5
+                <div :style="{transform:parallexArticle(0.6)}">
+                    <nuxt-link to="/articles" class="rounded-full px-5 p-2 border border-white text-white block md:inline-block text-center font-bold hover:underline">Back to Articles</nuxt-link>
+                    <img :src="attributes.img" alt="Article Image" class="mt-5
                     10">
                 </div>
-                <h1 class="text-6xl text-center font-normal" :style="{transform: parallexArticle(0.5)}">{{this.attributes.title}}</h1>
+                <h1 class="text-4xl lg:text-6xl text-center font-normal" :style="{transform: parallexArticle(0.5)}">{{attributes.title}}</h1>
             </div>
         </div>
         <!-- <div class="content" v-html="post.html"></div> -->
         <div class="bg-white relative text-gray-900">
-            <div class="article w-full md:w-1/2 p-4 mx-auto " v-html="this.html">
+            <div class="article w-full md:w-10/12 lg:w-1/2 p-4 mx-auto">
+                <p>{{attributes.description}}</p>
+                <div v-html="html">
 
+                </div>
             </div>
         </div>
 
@@ -48,18 +51,82 @@
             },
             parallexArticle(factor){
                 return `translateY(${this.scroll* factor}px)`
+            },
+            getArticle(){
+                let param = this.$route.params.slug;
+                this.$axios.get(`~/contents/${param}.md`)
+                    .then((response) => {
+                        console.log(response);
+                    })
             }
         },
         head(){
             return {
                 title: this.attributes.title,
                 meta: [
-                    {hid: 'description', name: 'description', content: this.attributes.description}
+                    {hid: 'description', name: 'description', content: this.attributes.title},
+                    {hid: 'og:description', property: 'og:description', content: this.attributes.title}
                 ]
             }
         },
         mounted(){
+            this.getArticle();
             window.addEventListener('scroll', this.handleScroll);
         }
     }
 </script>
+<style>
+    .article a {
+        @apply text-red-500 font-bold;
+    }
+    .article a:hover{
+        @apply underline;
+    }
+    .article h1{
+        @apply text-6xl font-medium my-4;
+    }
+    .article h2{
+        @apply text-4xl font-medium my-4;
+    }
+    .article h3{
+        @apply text-2xl font-medium my-4;
+    }
+    .article p{
+        @apply text-xl font-normal mb-6 leading-relaxed tracking-wide;
+    }
+
+    .article .well {
+        @apply p-4 bg-gray-200 rounded-lg;
+    }
+    .article .well p:last-child{
+        margin-bottom: 0;
+    }
+    .article ol{
+        @apply list-decimal pl-10;
+    }
+    .article ul{
+        @apply list-disc pl-10;
+    }
+    .article ul li{
+        @apply text-xl font-normal mt-4 leading-relaxed tracking-wide;
+    }
+    .article ol li{
+        @apply text-xl font-normal mt-4 leading-relaxed tracking-wide;
+    }
+    .article .created-date{
+        @apply text-gray-500
+    }
+    .article img{
+        @apply h-auto w-full mx-auto my-5 rounded-lg;
+    }
+
+    .article blockquote{
+        @apply border-l-8 p-2 border-gray-200 bg-gray-100 rounded-lg;
+    }
+    .article blockquote p{
+        @apply m-0;
+    }
+    .article hr{
+        @apply my-2;
+    }
+</style>

@@ -13,7 +13,7 @@
                     </div>
                 </router-link>
             </div>
-            <div class="block self-center lg:hidden">
+            <div class="block self-center lg:hidden pt-2">
                 <button class="hamburger hamburger--minus" @click="toggleNav" :class="{'is-active' : nav}">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>

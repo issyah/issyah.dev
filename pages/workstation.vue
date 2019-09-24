@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container p-4 mx-auto md:min-h-screen pb-8">
+        <div class="container p-4 mx-auto pb-8">
             <div class="mt-10 md:w-full lg:w-1/2">
                 <h1 class="text-5xl font-bold">Workstation</h1>
                 <p class="text-xl">Check out what I am stacking! The most important one that is.</p>

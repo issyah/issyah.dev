@@ -1,6 +1,8 @@
-# issyah.github.io
+# issyah.dev
 
 > Personal Profile Page for Issyah
+
+This project is built by nuxt.js
 
 ## Build Setup
 

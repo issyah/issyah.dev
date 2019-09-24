@@ -1,6 +1,7 @@
 <template>
-    <div class="w-full p-4 sm:p-0 sm:w-10/12 md:w-1/2 mx-auto md:min-h-screen">
+    <div class="w-full p-4 sm:p-0 sm:w-10/12 md:w-1/2 mx-auto md:min-h-screen mt-10">
         <h1 class="text-5xl font-bold">Articles</h1>
+        <p>Guide Articles and some other stuff.</p>
         <template v-if="articles.length">
             <div v-for="article in articles" class="rounded-lg overflow-hidden mt-10">
                 <div class="bg-green-500 p-5" v-if="article.attributes.img">
