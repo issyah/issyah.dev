@@ -9,16 +9,13 @@ function getSlugs(article, _){
   return `/articles/${slug}`;
 }
 export default {
-  server:{
-    port: 3000,
-    host: '0.0.0.0',
-  },
   generate :{
     routes: function() {
       return files.map(getSlugs);
     }
   },
-  mode: 'universal',
+  pageTransition: 'slide',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -45,6 +42,7 @@ export default {
   ** Global CSS
   */
   css: [
+    'assets/css/transition.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -71,10 +69,11 @@ export default {
     // google analytics
     '@nuxtjs/google-analytics',
     //site map
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
   ],
   sitemap:{
-    hostname: 'issyah.com'
+    hostname: 'https://issyah.com'
   },
   // google analytics configuration
   googleAnalytics:{

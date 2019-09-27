@@ -111,7 +111,7 @@
             </div>
             <div class="md:flex md:justify-between">
                 <div class="md:w-7/12 relative p-5">
-                    <img src="~/assets/works/obvy.jpg" class="w-full rounded-lg" alt="Obvy" v-scroll-reveal>
+                    <img src="~/assets/works/obvy.jpg" class="w-full rounded-lg" alt="Obvy Website Design" v-scroll-reveal>
                     <h3 class="absolute left-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-100 md:opacity-50 rounded-lg" :style="{transform: setParallexDepth(0.2, 'obvy')}" ref="obvy">
                         <a href="http://obvy.sg" target="_blank">OBVY.SG</a>
                     </h3>
@@ -127,7 +127,7 @@
 
                 </div>
                 <div class="md:w-7/12 relative p-5">
-                    <img src="~/assets/works/harummanis.jpg" class="w-full rounded-lg" alt="Obvy" v-scroll-reveal>
+                    <img src="~/assets/works/harummanis.jpg" class="w-full rounded-lg" alt="Harummanis Website Design" v-scroll-reveal>
                     <h3 class="absolute left-0 md:left-auto md:right-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-50 md:opacity-75 rounded-lg" :style="{transform:setParallexDepth(0.2, 'harummanis')}" ref="harummanis">
                         <a href="http://harummanis.sg" target="_blank">HARUMMANIS.SG</a>
                     </h3>
@@ -161,7 +161,7 @@ import DeathStar from '~/components/death_star.vue';
 export default {
     head(){
         return{
-            title: 'Issyah Ismail',
+            title: 'Issyah Ismail - Front End Developer',
             meta:[
                 {hid: 'description', name: 'description', content: 'Issyah Ismail. UI/UX Front End Developer based in Singapore'},
 

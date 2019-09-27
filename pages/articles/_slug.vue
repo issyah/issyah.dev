@@ -4,7 +4,7 @@
             <div class="w-full md:w-1/2 p-4 mx-auto" ref="jumbotron">
                 <div :style="{transform:parallexArticle(0.6)}">
                     <nuxt-link to="/articles" class="rounded-full px-5 p-2 border border-white text-white block md:inline-block text-center font-bold hover:underline">Back to Articles</nuxt-link>
-                    <img :src="attributes.img" alt="Article Image" class="mt-5
+                    <img :src="attributes.img" :alt="attributes.imgAlt" class="mt-5
                     10">
                 </div>
                 <h1 class="text-4xl lg:text-6xl text-center font-normal" :style="{transform: parallexArticle(0.5)}">{{attributes.title}}</h1>
@@ -52,13 +52,6 @@
             parallexArticle(factor){
                 return `translateY(${this.scroll* factor}px)`
             },
-            getArticle(){
-                let param = this.$route.params.slug;
-                this.$axios.get(`~/contents/${param}.md`)
-                    .then((response) => {
-                        console.log(response);
-                    })
-            }
         },
         head(){
             return {
@@ -70,7 +63,6 @@
             }
         },
         mounted(){
-            this.getArticle();
             window.addEventListener('scroll', this.handleScroll);
         }
     }

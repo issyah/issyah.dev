@@ -5,6 +5,7 @@ date: 17 Sep 2019
 online: true
 description: So you are about to embark on a whole new journey into the industry. You have finally graduated but you have no experience. You want to spice up your resume but can't afford to buy a hosting service and domain to host your personal website. How do you even show your capabilities? Github has the answer.
 img: /images/portfolio.svg
+imgAlt: 'Free hosting for your personal portfolio'
 ---
 
 If you have been working with multiple projects with different developers, you have probably heard of Github. If you are new to development and writing codes, you might want to learn more about [Git](https://git-scm.com) and [Github](https://github.com) first.
@@ -83,4 +84,4 @@ Under __Github Pages__ , __source__, use the dropdown and select __master__ as t
 
 
 
-You are all set to build your new site! This is the most basic way to get your site up and running. You can upload your static files here and start working on it! However, we did not fully utilise the capabilities of Git in this example like cloning the repository to your local machine. You can even push your changes up to the repository as well using terminal or Github Desktop without the need to upload the files again and again. 
+You are all set to build your new site! This is the most basic way to get your site up and running. You can upload your static files here and start working on it! However, we did not fully utilise the capabilities of Git in this example like cloning the repository to your local machine. You can even push your changes up to the repository as well using terminal or Github Desktop without the need to upload the files again and again.

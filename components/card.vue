@@ -3,8 +3,8 @@
         <!-- <div class="relative w-5/6 md:w-full mx-auto rounded-lg overflow-hidden" :style="{transform:getTransformsOffset}"> -->
         <div ref="card">
             <div class="relative w-5/6 md:w-full mx-auto rounded-lg overflow-hidden" data-depth="0.1">
-                <img :src="imageUrl" alt="DP" class=" h-full w-full object-cover"/>
-                <img :src="imageUrlHover" alt="DP" class="top-0 absolute h-full w-full object-cover transition-opacity" :class="hoverImgOpacity"/>
+                <img :src="imageUrl" alt="Issyah Ismail" class=" h-full w-full object-cover"/>
+                <img :src="imageUrlHover" alt="Issyah Ismail" class="top-0 absolute h-full w-full object-cover transition-opacity" :class="hoverImgOpacity"/>
             </div>
         </div>
         <div class="md:px-3 -mt-12 relative" ref="card2">
