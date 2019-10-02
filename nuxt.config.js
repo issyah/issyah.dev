@@ -15,7 +15,7 @@ export default {
     }
   },
   pageTransition: 'slide',
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */

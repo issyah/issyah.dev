@@ -10,26 +10,24 @@
                     </span>
                     Hardware
                 </h1>
-                <p>
-                    <hardware-list
-                    :hardware-list="[
-                        {
-                            header: 'Laptop',
-                            title: '15&quot; Macbook Pro (2015) 2.2Ghz Intel core i7 16 GB Ram',
-                            description: 'The senior workhorse. Still packs a punch even after 4 years. Who needs dongle when you have all the ports!',
-                        },
-                        {
-                            header: 'Mouse',
-                            title: 'Logitech MX Master',
-                            description: 'The mouse badass mouse ever. Side-scroll wheel. What?!'
-                        },
-                        {
-                            header: 'Keyboard',
-                            title: 'Leopold FC660C Topre Keyboard',
-                            description: 'The most satisfying keyboard I have ever typed with. Expensive? Yes. Worth it? Definitely. Topre > Cherry MX > Apple Keyboard. Fight me. '
-                        },
-                    ]"></hardware-list>
-                </p>
+                <hardware-list
+                :hardware-list="[
+                    {
+                        header: 'Laptop',
+                        title: '15&quot; Macbook Pro (2015) 2.2Ghz Intel core i7 16 GB Ram',
+                        description: 'The senior workhorse. Still packs a punch even after 4 years. Who needs dongle when you have all the ports!',
+                    },
+                    {
+                        header: 'Mouse',
+                        title: 'Logitech MX Master',
+                        description: 'The mouse badass mouse ever. Side-scroll wheel. What?!'
+                    },
+                    {
+                        header: 'Keyboard',
+                        title: 'Leopold FC660C Topre Keyboard',
+                        description: 'The most satisfying keyboard I have ever typed with. Expensive? Yes. Worth it? Definitely. Topre > Cherry MX > Apple Keyboard. Fight me. '
+                    },
+                ]"></hardware-list>
                 <h1  class="text-4xl font-medium inline-block leading-tight mt-8">
                     <span class="text-red-500">
                         <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="fill-current inline-block h-8">
@@ -62,12 +60,6 @@
                             title: 'Google Chrome',
                             description: 'My go-to development browser. Add Vue\'s devtool on Google Chrome for Vue.js application and you are all set!'
                         },
-                        {
-                            img: 'https://blisk.io/Images/blisk-logo.svg',
-                            header: 'Browser',
-                            title: 'Blisk',
-                            description: '&quot;What? 2 browser? You must be joking.&quot; Yup. Best browser to test responsiveness of a website.'
-                        }
                     ]"></hardware-list>
 
                     <h1 class="text-4xl font-medium inline-block leading-tight mt-8">
@@ -95,6 +87,12 @@
                             header: 'CSS Framework',
                             title: 'Tailwind CSS (new)',
                             description: 'This is a new framework I love working on right now. It has no components, no forms and no UI. So what\'s good about it? Everything! It is a utility based framework which means you don\'t have to write a single CSS class with it. You can build your components however you want. You don\'t have to overwrite existing components cause, it doesn\'t have any. This site is built with Tailwind CSS.',
+                        },
+                        {
+                            img:'https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg',
+                            header: 'CSS Preprocessor',
+                            title: 'Sass',
+                            description: 'I love this. You can define variables and write for loops when building a css file. AMAZING. I usually use sass if I am customizing a default bootstrap layout. It is way easier and cleaner to re-build a whole bootstrap css rather than creating a new file to overwrite the default bootstrap css.'
                         },
                         {
                             img: 'https://laravel.com/img/logomark.min.svg',
