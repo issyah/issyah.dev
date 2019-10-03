@@ -2,15 +2,13 @@
     <div class="relative">
         <div class="bg-green-500 lg:pt-16">
             <div class="w-full md:w-1/2 p-4 mx-auto" ref="jumbotron">
-                <div :style="{transform:parallexArticle(0.6)}">
-                    <nuxt-link to="/articles" class="rounded-full px-5 p-2 border border-white text-white block md:inline-block text-center font-bold hover:underline">Back to Articles</nuxt-link>
-                    <img :src="attributes.img" :alt="attributes.imgAlt" class="mt-5
-                    10">
-                </div>
+                <nuxt-link to="/articles" class="rounded-full px-5 p-2 border border-white text-white block md:inline-block text-center font-bold hover:underline">Back to Articles</nuxt-link>
                 <h1 class="text-4xl lg:text-6xl text-center font-normal" :style="{transform: parallexArticle(0.5)}">{{attributes.title}}</h1>
+                <div :style="{transform:parallexArticle(0.6)}">
+                    <img :src="attributes.img" :alt="attributes.imgAlt" class="mt-5">
+                </div>
             </div>
         </div>
-        <!-- <div class="content" v-html="post.html"></div> -->
         <div class="bg-white relative text-gray-900">
             <div class="article w-full md:w-10/12 lg:w-1/2 p-4 mx-auto">
                 <p>{{attributes.description}}</p>
@@ -19,23 +17,26 @@
                 </div>
             </div>
         </div>
-
     </div>
-
 </template>
 <script>
     export default {
         transition: 'slide',
         async asyncData({params}){
-            try{
-                let article = await import(`~/contents/${params.slug}.md`);
-                return {
-                    attributes: article.attributes,
-                    html: article.html
-                }
-            } catch(err){
-                return false
+            let article = await import(`~/contents/${params.slug}.md`);
+            return {
+                attributes: article.attributes,
+                html: article.html,
             }
+            // try{
+            //     let article = await import(`~/contents/${params.slug}.md`);
+            //     return {
+            //         attributes: article.attributes,
+            //         html: article.html
+            //     }
+            // } catch(err){
+            //     return false
+            // }
         },
         data:() => ({
             scroll:'',

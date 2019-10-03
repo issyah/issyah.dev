@@ -2,11 +2,11 @@
     <div class="w-full p-4 sm:p-0 sm:w-10/12 md:w-1/2 mx-auto md:min-h-screen mt-10">
         <h1 class="text-5xl font-bold">Articles</h1>
         <p>Guide Articles and some other stuff.</p>
-        <template v-if="articles.length">
+        <template v-if="articles">
             <div v-for="article in articles" class="rounded-lg overflow-hidden mt-10">
-                <div class="bg-green-500 p-5" v-if="article.attributes.img">
+                <div class="bg-green-500" v-if="article.attributes.img">
                     <nuxt-link :to="(article.attributes.online) ? '/articles/' + article.attributes.url : ''">
-                        <img :src="article.attributes.img" alt="Image Article" class="w-auto h-64 mx-auto"/>
+                        <img :src="article.attributes.img" alt="Image Article" class="w-full h-64 object-cover"/>
                     </nuxt-link>
                 </div>
                 <div class="py-4 px-8 bg-gray-100 text-black">
@@ -26,6 +26,7 @@
                 </div>
                 <!-- <hr class="my-5 border-gray-800"> -->
             </div>
+            <div class="mb-10"></div>
         </template>
     </div>
 </template>
@@ -38,6 +39,10 @@
                 const [,name] = key.match(/\/(.+)\.md$/);
                 return resolve(key)
             });
+            imports.sort((a,b) => {
+                return new Date(b.attributes.date) - new Date(a.attributes.date)
+            });
+            // imports.forEach((e) => delete e.html);
             return {
                 articles : imports
             }

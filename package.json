@@ -10,7 +10,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "deploy": "rm -rf dist && nuxt generate && rm -rf issyah.github.io/* && cp -a dist/. ../issyah.github.io/",
-    "deploy-spa": "nuxt build && cp -a dist/. ../issyah.github.io/"
+    "deploy-spa": "nuxt build && cp -a dist/. ../issyah.github.io/",
+    "m2j": "m2j contents/*.md -o assets/json/articles.json"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
@@ -25,6 +26,7 @@
     "@nuxtjs/tailwindcss": "^1.0.0",
     "frontmatter-markdown-loader": "^2.1.0",
     "glob": "^7.1.4",
+    "markdown-to-json": "^0.5.1",
     "path": "^0.12.7",
     "tailwindcss": "^1.1.2"
   }

@@ -118,18 +118,21 @@
                 </div>
             </div>
             <div class="md:flex mt-10">
-                <!-- <div class="md:w-6/12 self-center">
-                    <p class="text-2xl">
-                        OBVY is a production agency formed in March 2017. We focus on digital content creation, with specialization in video content. Founded by two partners who have over 10 years of experience in broadcast and digital media, we work closely with both brands and agencies as their content partners.
-                    </p>
-                </div> -->
                 <div class="md:w-6/12">
 
                 </div>
                 <div class="md:w-7/12 relative p-5">
                     <img src="~/assets/works/harummanis.jpg" class="w-full rounded-lg" alt="Harummanis Website Design" v-scroll-reveal>
-                    <h3 class="absolute left-0 md:left-auto md:right-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-50 md:opacity-75 rounded-lg" :style="{transform:setParallexDepth(0.2, 'harummanis')}" ref="harummanis">
+                    <h3 class="absolute left-0 md:left-auto md:right-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-100 md:opacity-50 rounded-lg" :style="{transform:setParallexDepth(0.2, 'harummanis')}" ref="harummanis">
                         <a href="http://harummanis.sg" target="_blank">HARUMMANIS.SG</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="md:flex  mt-10">
+                <div class="md:w-7/12 relative p-5">
+                    <img src="~/assets/works/polycourses.jpg" class="w-full rounded-lg" alt="Polycourses Issyah Ismail" v-scroll-reveal>
+                    <h3 class="absolute left-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-100 md:opacity-50 rounded-lg" :style="{transform: setParallexDepth(0.2, 'polycourses')}" ref="polycourses">
+                        <a href="http://issyah.com/polycourses" target="_blank">POLYCOURSES</a>
                     </h3>
                 </div>
             </div>
