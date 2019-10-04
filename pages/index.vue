@@ -132,7 +132,7 @@
                 <div class="md:w-7/12 relative p-5">
                     <img src="~/assets/works/polycourses.jpg" class="w-full rounded-lg" alt="Polycourses Issyah Ismail" v-scroll-reveal>
                     <h3 class="absolute left-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-100 md:opacity-50 rounded-lg" :style="{transform: setParallexDepth(0.2, 'polycourses')}" ref="polycourses">
-                        <a href="http://issyah.com/polycourses" target="_blank">POLYCOURSES</a>
+                        <a href="http://polycourses.issyah.com" target="_blank">POLYCOURSES</a>
                     </h3>
                 </div>
             </div>
