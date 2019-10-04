@@ -1,5 +1,5 @@
 {
-  "2019-09-17-free-hosting-for-your-personal-website": {
+  "free-hosting-for-your-personal-website": {
     "title": "Free Hosting For Your Personal Website",
     "url": "free-hosting-for-your-personal-website",
     "date": "2019-09-17",
@@ -9,10 +9,10 @@
     "imgAlt": "Free hosting for your personal portfolio",
     "preview": "If you have been working with multiple projects with different …",
     "iso8601Date": "2019-09-17T00:00:00+08:00",
-    "basename": "2019-09-17-free-hosting-for-your-personal-website"
+    "basename": "free-hosting-for-your-personal-website"
   },
-  "2019-10-03-singapore-local-polytechnics-courses-visualisation": {
-    "title": "A visualisation diagram of all the courses available in our local polytechnics",
+  "singapore-local-polytechnics-courses-visualisation": {
+    "title": "Polytechnic Courses Visualisation Tool",
     "url": "singapore-local-polytechnics-courses-visualisation",
     "date": "2019-10-03",
     "online": false,
@@ -21,6 +21,6 @@
     "imgAlt": "Polytechnic visualisation tree",
     "preview": "",
     "iso8601Date": "2019-10-03T00:00:00+08:00",
-    "basename": "2019-10-03-singapore-local-polytechnics-courses-visualisation"
+    "basename": "singapore-local-polytechnics-courses-visualisation"
   }
 }
