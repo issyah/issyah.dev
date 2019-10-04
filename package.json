@@ -10,7 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "delete-dist": "rm -rf dist",
-    "copy-dist": "rm -rf issyah.github.io/* && cp -a dist/. ../issyah.github.io",
+    "copy-dist": "rm -rf ../issyah.github.io/**/* && cp -a dist/. ../issyah.github.io",
     "deploy": "npm run m2j && npm run delete-dist && nuxt generate && npm run copy-dist",
     "deploy-spa": "nuxt build && cp -a dist/. ../issyah.github.io/",
     "m2j": "m2j contents/*.md -o assets/json/articles.json"
