@@ -125,4 +125,10 @@
     .article hr{
         @apply my-2;
     }
+    .article pre {
+        @apply p-3 rounded-lg shadow-lg bg-gray-200 overflow-auto my-2;
+    }
+    .article pre code.language-json{
+        @apply text-green-700;
+    }
 </style>
