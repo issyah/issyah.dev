@@ -15,11 +15,11 @@
     "title": "Polytechnic Courses Visualisation Tool",
     "url": "singapore-local-polytechnics-courses-visualisation",
     "date": "2019-10-03",
-    "online": false,
+    "online": "yes",
     "description": "A personal project of mine that has been on the back burner for a while. Finally I got it completed (Sort of). This is a cool visualisation tool that consolidates all diploma courses available at our 5 local Singapore polytechnics. Data sources from data.gov.sg and polytechnic.edu.sg.",
-    "img": "/images/polycourses.jpg",
+    "img": "/images/polycourses.png",
     "imgAlt": "Polytechnic visualisation tree",
-    "preview": "",
+    "preview": "Even after 4 years of graduating, d3.js still haunts me. During my …",
     "iso8601Date": "2019-10-03T00:00:00+08:00",
     "basename": "singapore-local-polytechnics-courses-visualisation"
   }

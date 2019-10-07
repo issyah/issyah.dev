@@ -4,9 +4,9 @@
         <p>Guide Articles and some other stuff.</p>
         <template v-if="articlesSorted">
             <div v-for="article in articlesSorted" class="rounded-lg overflow-hidden mt-10">
-                <div class="bg-green-500" v-if="article.img">
+                <div class="bg-gray-400 p-4" v-if="article.img">
                     <nuxt-link :to="(article.online) ? '/articles/' + article.url : ''">
-                        <img :src="article.img" alt="Image Article" class="w-full h-64 object-cover"/>
+                        <img :src="article.img" alt="Image Article" class="mx-auto h-64 "/>
                     </nuxt-link>
                 </div>
                 <div class="py-4 px-8 bg-gray-100 text-black">

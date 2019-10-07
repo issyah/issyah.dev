@@ -1,17 +1,17 @@
 <template>
     <div class="relative">
-        <div class="bg-green-500 lg:pt-16">
-            <div class="w-full md:w-1/2 p-4 mx-auto" ref="jumbotron">
-                <nuxt-link to="/articles" class="rounded-full px-5 p-2 border border-white text-white block md:inline-block text-center font-bold hover:underline">Back to Articles</nuxt-link>
+        <div class="bg-gray-400 lg:pt-16">
+            <div class="w-full md:w-1/2 p-4 mx-auto text-gray-700" ref="jumbotron">
+                <nuxt-link to="/articles" class="rounded-full px-5 p-2 block md:inline-block text-center font-bold hover:underline">Back to Articles</nuxt-link>
                 <h1 class="text-4xl lg:text-6xl text-center font-normal" :style="{transform: parallexArticle(0.5)}">{{attributes.title}}</h1>
                 <div :style="{transform:parallexArticle(0.6)}">
-                    <img :src="attributes.img" :alt="attributes.imgAlt" class="mt-5">
+                    <img :src="attributes.img" :alt="attributes.imgAlt" class="mt-5 w-auto">
                 </div>
             </div>
         </div>
         <div class="bg-white relative text-gray-900">
-            <div class="article w-full md:w-10/12 lg:w-1/2 p-4 mx-auto">
-                <p>{{attributes.description}}</p>
+            <div class="article w-full md:w-10/12 pt-10 lg:w-1/2 p-4 mx-auto">
+                <p class="lead">{{attributes.description}}</p>
                 <div v-html="html">
 
                 </div>
@@ -86,6 +86,9 @@
     }
     .article p{
         @apply text-xl font-normal mb-6 leading-relaxed tracking-wide;
+    }
+    .article .lead{
+        @apply font-light text-2xl;
     }
 
     .article .well {
