@@ -17,7 +17,7 @@ There are many visualisation tools available for D3.js but for this project purp
 
 ![alt text](/images/d3-tree.jpg 'D3 Collapsible Tree D3 Collapsible Tree')
 
-[Polycourses](https://polycourses.issyah.com) is built with Nuxt.js, Taildwind.css, D3.js and lodash. The list of courses are available at [polytechnic.edu.sg](https://polytechnic.edu.sg) and more detail descriptions are available at [data.gov.sg](https://data.gov.sg).
+[Polycourses](https://sg.polycourses.com) is built with Nuxt.js, Taildwind.css, D3.js and lodash. The list of courses are available at [polytechnic.edu.sg](https://polytechnic.edu.sg) and more detail descriptions are available at [data.gov.sg](https://data.gov.sg).
 
 The CSV data from polytechnic.edu.sg was first converted into a JSON and imported into the Nuxt.js app.
 
@@ -52,6 +52,6 @@ From there, it can be filtered based on the clusters and polytechnics. The cours
 
 Due to the nature of different datasets, some description may not be available. Some data are outdated as well. I may include other statistical data like total intake/graduates etc in the near future. But in the meantime, have a go!
 
-## [Polycourses](https://polycourses.issyah.com)
+## [Polycourses](https://sg.polycourses.com)
 
 ![alt text](/images/polycourses-app.jpg "Polycourses Polycourses App")
