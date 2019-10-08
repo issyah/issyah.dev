@@ -5,7 +5,7 @@
                 <nuxt-link to="/articles" class="rounded-full px-5 p-2 block md:inline-block text-center font-bold hover:underline">Back to Articles</nuxt-link>
                 <h1 class="text-4xl lg:text-6xl text-center font-normal" :style="{transform: parallexArticle(0.5)}">{{attributes.title}}</h1>
                 <div :style="{transform:parallexArticle(0.6)}">
-                    <img :src="attributes.img" :alt="attributes.imgAlt" class="mt-5 w-auto">
+                    <img :src="attributes.img" :alt="attributes.imgAlt" class="mt-5 w-auto mx-auto">
                 </div>
             </div>
         </div>
