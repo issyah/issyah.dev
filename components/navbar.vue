@@ -35,9 +35,9 @@
                     <li class="mt-10 lg:mt-0 block lg:inline-block" @click="nav = false" :class="{'text-red-500' : $route.name == 'workstation'}">
                         <nuxt-link to="/workstation/" class="hover:text-gray-500 mr-5">Workstation</nuxt-link>
                     </li>
-                    <li class="mt-10 lg:mt-0 block lg:inline-block" @click="nav = false" :class="{'text-red-500' : ($route.path.indexOf('articles')!= -1) }">
+                    <!-- <li class="mt-10 lg:mt-0 block lg:inline-block" @click="nav = false" :class="{'text-red-500' : ($route.path.indexOf('articles')!= -1) }">
                         <nuxt-link to="/articles/" class="hover:text-gray-500 mr-5">Articles</nuxt-link>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>

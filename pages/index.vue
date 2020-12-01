@@ -109,11 +109,36 @@
                     Recent Works
                 </h1>
             </div>
-            <div class="md:flex md:justify-between">
+            <div class="md:flex md:justify-between mt-10">
                 <div class="md:w-7/12 relative p-5">
-                    <img src="~/assets/works/obvy.jpg" class="w-full rounded-lg" alt="Obvy Website Design" v-scroll-reveal>
-                    <h3 class="absolute left-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-100 md:opacity-50 rounded-lg" :style="{transform: setParallexDepth(0.2, 'obvy')}" ref="obvy">
-                        <a href="http://obvy.sg" target="_blank">OBVY.SG</a>
+                    <a href="https://zyne.asia" target="_blank">
+                        <img src="~/assets/works/zyneasia.jpg" class="w-full rounded-lg" alt="Zyne Asia" v-scroll-reveal>
+                    </a>
+                    <h3 class="absolute left-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl py-4 px-8 md:hover:opacity-100 rounded-lg" ref="obvy">
+                        <a href="https://zyne.asia" target="_blank">zyne.asia</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="md:flex md:justify-between mt-10">
+                <div class="md:w-6/12">
+
+                </div>
+                <div class="md:w-7/12 relative p-5">
+                    <a href="http://suzukisingapore.com.sg" target="_blank">
+                        <img src="~/assets/works/suzukisingapore.jpg" class="w-full rounded-lg" alt="Suzuki Singapore Website Design" v-scroll-reveal>
+                    </a>
+                    <h3 class="absolute left-0 md:left-auto md:right-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl py-4 px-8 md:hover:opacity-100  rounded-lg"  ref="suzukisingapore">
+                        <a href="http://suzukisingapore.com.sg" target="_blank">SUZUKISINGAPORE.SG</a>
+                    </h3>
+                </div>
+            </div>
+            <div class="md:flex md:justify-between mt-10">
+                <div class="md:w-7/12 relative p-5">
+                    <a href="http://obvy.sg" target="_blank">
+                        <img src="~/assets/works/obvy.jpg" class="w-full rounded-lg" alt="Obvy Website Design" v-scroll-reveal>
+                    </a>
+                    <h3 class="absolute left-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl py-4 px-8 md:hover:opacity-100 rounded-lg" ref="obvy">
+                        <a href="http://obvy.sg" target="_blank">obvy.sg</a>
                     </h3>
                 </div>
             </div>
@@ -122,17 +147,21 @@
 
                 </div>
                 <div class="md:w-7/12 relative p-5">
-                    <img src="~/assets/works/harummanis.jpg" class="w-full rounded-lg" alt="Harummanis Website Design" v-scroll-reveal>
-                    <h3 class="absolute left-0 md:left-auto md:right-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-100 md:opacity-50 rounded-lg" :style="{transform:setParallexDepth(0.2, 'harummanis')}" ref="harummanis">
-                        <a href="http://harummanis.sg" target="_blank">HARUMMANIS.SG</a>
+                    <a href="http://harummanis.sg">
+                        <img src="~/assets/works/harummanis.jpg" class="w-full rounded-lg" alt="Harummanis Website Design" v-scroll-reveal>
+                    </a>
+                    <h3 class="absolute left-0 md:left-auto md:right-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl py-4 px-8 md:hover:opacity-100  rounded-lg" ref="harummanis">
+                        <a href="http://harummanis.sg" target="_blank">harummanis.sg</a>
                     </h3>
                 </div>
             </div>
             <div class="md:flex  mt-10">
                 <div class="md:w-7/12 relative p-5">
-                    <img src="~/assets/works/polycourses.jpg" class="w-full rounded-lg" alt="Polycourses Issyah Ismail" v-scroll-reveal>
-                    <h3 class="absolute left-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl p-4 md:hover:opacity-100 md:opacity-50 rounded-lg" :style="{transform: setParallexDepth(0.2, 'polycourses')}" ref="polycourses">
-                        <a href="https://sg.polycourses.com" target="_blank">POLYCOURSES</a>
+                    <a href="https://sg.polycourses.com" target="_blank">
+                        <img src="~/assets/works/polycourses.jpg" class="w-full rounded-lg" alt="Polycourses Issyah Ismail" v-scroll-reveal>
+                    </a>
+                    <h3 class="absolute left-0 bottom-0 bg-gray-100 text-gray-900 md:text-5xl block font-bold md:-mr-10 md:mb-10 shadow-xl py-4 px-8 md:hover:opacity-100 rounded-lg"  ref="polycourses">
+                        <a href="https://sg.polycourses.com" target="_blank">sg.polycourses.com</a>
                     </h3>
                 </div>
             </div>
